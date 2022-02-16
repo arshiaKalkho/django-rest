@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main'
+    #new apps created using startapp command should be manually added here
+    #run migrate command to make django consider new changes
 ]
 
 MIDDLEWARE = [
