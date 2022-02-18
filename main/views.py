@@ -9,7 +9,7 @@ def index(response, id):
     list = ToDoList.objects.get(id=id)
     
     if response.method == "POST":
-        print("received:    ",response.POST)
+        #print("received:    ",response.POST)
         if response.POST.get('save'):#update new item if are completed or not 
             for item in list.item_set.all():
                 if response.POST.get('c' + str(item.id)) == "clicked":

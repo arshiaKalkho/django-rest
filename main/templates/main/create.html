@@ -7,7 +7,11 @@
 {% block content %}
     <form method="post" action="/create/">
         {% csrf_token %}
-        {{form.as_p}}
-        <button type="submit" name="save">create record</button>        
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <button type="submit" name="save" class=" btn btn-success">create record</button>        
+            </div>
+            {{form.name}}
+        </div>
     </form>
 {% endblock %}
