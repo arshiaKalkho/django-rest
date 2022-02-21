@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main'
+    'crispy_forms',
+    'main',
+    'authenticate',
+
     #new apps created using startapp command should be manually added here
     #run migrate command to make django consider new changes
 ]
@@ -128,3 +131,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK="bootstrap4"

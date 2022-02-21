@@ -7,6 +7,6 @@
 --command 'startapp' creats an app(like component) 
 --command 'shell' allows for interaction with django like adding data to db
 
---after change to one moduel command 'makemigrations <name of app>' should be used with manage.py, this is like "commit" and applies changes --to staging area of django--. then we can run command 'migrate' which acts like push and makes the actual changes to the project from "the staging area".
+--after change to one module command 'makemigrations <name of app>' should be used with manage.py, this is like "commit" and applies changes --to staging area of django--. then we can run command 'migrate' which acts like push and makes the actual changes to the project from "the staging area".
 
 
